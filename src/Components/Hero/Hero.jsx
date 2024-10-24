@@ -11,7 +11,7 @@ const Hero = () => {
         <p>Currently learning and exploring the world of AI and Machine Learning.</p>
         <div className='hero-action'>
             <div className='hero-connect'><AnchorLink className="anchor-link" offset={50} href='#contact'>Connect with me</AnchorLink></div>
-            <div className='hero-resume'><AnchorLink className="anchor-link" offset={50} href='#https://drive.google.com/file/d/1WF0HbUy9MKG70swjAfKVsS5JsW66wqV3/view?usp=drive_link'>My Resume</AnchorLink></div>
+            <div className='hero-resume'><a className="anchor-link" href='https://drive.google.com/file/d/1WF0HbUy9MKG70swjAfKVsS5JsW66wqV3/view?usp=drive_link' target="_blank" rel="noopener noreferrer">My Resume</a></div>
 
 
         </div>
