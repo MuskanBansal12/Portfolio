@@ -19,7 +19,7 @@
 .about-sections .about-left .profile_img {
     width: 250px; 
     height: 350px; /* Set the height of the profile image to 50px */
-   
+   border-radius: 10%;
     object-fit: cover; /* Ensure the image scales correctly */
 }
 .about-sections{
@@ -66,7 +66,7 @@
 .about-skill hr{
     outline: none;
     border: none;
-    width:50%;
+    width:40%;
     height:8px;
     border-radius: 50px;
     background: linear-gradient(264deg, #DF8908 -5.09%,#B415ff 106.28%);
@@ -75,4 +75,39 @@
 .about-skill:hover{
     transform: scale(1.05);
     transition: 0.3s;
+}
+
+@media(max-width:768px){
+    .about{
+        gap:80px;
+        margin:50px 70px;
+        align-items:start;
+    }
+    .about-title h1{
+        font-size:50px;
+        padding:0;
+
+    }
+    .about-sections{
+        flex-direction: column;
+    }
+    .about-left{
+        display :none;
+
+    }
+    .about-para{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .about-skill{
+        gap:20px;
+        align-items:center;
+    }
+    .about-skill p{
+        font-size:20px;
+    }
+    .about-skill hr{
+        height:6px;
+    }
+    
 }

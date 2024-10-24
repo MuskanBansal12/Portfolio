@@ -11,7 +11,7 @@ const Work_Exp = () => {
       <div className="work-container">
       {mywork_data.map((work_exp,index)=>{
           return <div className='work-format'>
-            <img src={work_exp.w_image} alt={work_exp.w_name} />
+           
            
             <h2>{work_exp.w_name}</h2>
             <p>{work_exp.w_desc}</p>

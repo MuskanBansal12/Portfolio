@@ -55,15 +55,7 @@
     line-height: 40px;
     max-width: 300px;
 }
-.work-format img.work-image {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 600px; /* Set a maximum width */
-    max-height: 400px; /* Set a maximum height */
-    margin-top: 40px; /* Space above the image */
-    object-fit: cover; /* Ensure the image is scaled properly */
-    border-radius: 10%; /* Optional: to match the border radius */
-}
+
 .work-format:hover{
     border: 2px solid #ff00ff;
     background-image:linear-gradient(45deg,#3f0028,#582300) ;
@@ -72,4 +64,34 @@
 
 
 }
+
+@media(max-width:768px){
+    .work{
+        align-items: start;
+        gap:70px;
+        margin:20px 70px;
+    }
+    .work-title h1{
+        padding:0;
+        font-size: 50px;
+    }
+    .work-format{
+        gap:20px;
+        padding:32px;
+    }
+    .work-format h2{
+        font-size: 28px;
+    }
+    .work-format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 600px;
+    }
+    .work-container{
+        grid-template-columns: 1fr 1fr ;
+        
+        gap:30px;
+    }
+}
+
 
